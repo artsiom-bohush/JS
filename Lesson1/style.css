@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40 px;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+nav ul {
+    display: grid;
+    text-transform: uppercase;
+    gap: 20px;
+    list-style: none;
+    grid-auto-flow: column;
+
+}
+
+
+.btn {
+
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px;
+}
+
+#services {
+    margin-top: 140px;
+    margin-bottom: 140px;
+
+}
+
+#services h2 {
+    margin: 40px 0;
+    font-size: 48px;
+}
+
+#services .card-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-rows: 350px;
+    gap: 30px;
+}
+
+#services .item {
+    background-image: url('./media/Rectangle\ 2.png');
+    width: 350px;
+    height: 350px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#services .item:hover {
+    background-image: linear-gradient(rgba(41, 128, 185, 0.5),
+            rgba(41, 128, 185, 0.5)), url('./media/Rectangle\ 2.png')
+}
+
+#services .item p {
+    color: white;
+    font-size: 24px;
+}
+
+#services .item .btn {
+    color: white;
+    border-color: white;
+
+}
